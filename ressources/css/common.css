@@ -1,0 +1,115 @@
+:root{
+   --white-color: #fff; 
+   --fade-white-color: #f2f2f2;
+   --fade-primary-color: #f1f8fe;
+   --none-color: transparent;
+   --primary-color: #1a8cdb;
+   --danger-color: rgb(219, 3, 3);
+   --fade-danger-color: rgb(255, 243, 243);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*:focus{
+    outline: none;
+}
+body{
+    margin-top: 60px;
+}
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.03);
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+}
+.maintitle{
+    background-color: var(--none-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.5em;
+    padding: 0px 20px 0px 20px;
+    font-family: calibri;
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    background-color: var(--none-color);
+    height: 100%;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 10px;
+    gap: 5px;
+}
+.btn{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: calibri;
+    font-size: 0.9em;
+    color: var(--primary-color);
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--fade-primary-color);
+}
+.btn svg{
+    padding-right: 5px;
+}
+.btn.active{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.btn.active:hover{
+  background-color: #1683d1;  
+}
+div.alert{
+    background-color: var(--fade-primary-color);
+    color: black;
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+}
+div.alert.danger{
+    background-color: var(--fade-danger-color);
+}
+.alert svg:first-of-type{
+    margin: 0px 10px;
+    font-size: 1.1em;
+}
+.alert p{
+    font-family: calibri;
+}
+.link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin-left: 3px;
+    margin-bottom: -4px;
+}
+.btn-container{
+    background-color: var(--fade-primary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.title{
+    font-weight: 100;
+    font-family: calibri;
+    font-size: 2.3em;
+}
+.title.primary{
+    color: var(--primary-color);
+}

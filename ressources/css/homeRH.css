@@ -1,0 +1,97 @@
+.button-container{
+    background-color: var(--fade-white-color);
+    height: calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.big-button{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.05);
+}
+.big-button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 9px 9px rgb(0, 0, 0, 0.06);
+}
+.big-button:hover span{
+    color: white;
+    background-color: var(--primary-color);
+}
+.big-button svg{
+    flex: 1;
+    font-size: 6em;
+    color: var(--primary-color);
+}
+.big-button span{
+    transition: all 0.3s;
+    font-size: 1.3em;
+    font-weight: 100;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: calibri;
+    color: var(--primary-color);
+    background-color: var(--fade-primary-color);
+    padding: 30px 0px;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: transparent;
+    padding: 10px;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+.form h1{
+    font-size: 2.5em;
+    font-weight: 200;
+    font-family: calibri;
+    margin: 20px 0px;
+}
+.form .inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+.form .inputContainer.group{
+    grid-column: span 2;
+}
+.form .inputContainer label{
+    font-size: 1em;
+    font-weight: 100;
+    font-family: calibri;
+    margin: 10px 0px;
+}
+.form .inputContainer :is(.input, select){
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid #999;
+}
+.form input.submitbtn{
+    height: 40px;
+    width: 400px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.03);
+    cursor: pointer;
+    justify-self: flex-end;
+    font-size: 1em;
+    font-weight: 100;
+    border-radius: 2px;
+    margin-top: 20px;
+}
